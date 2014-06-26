@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nadeem.app.ocr</groupId>
+	<artifactId>ocr-tess4j-example</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>net.sf</groupId>
+			<artifactId>ghost4j</artifactId>
+			<version>0.4.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge</groupId>
+			<artifactId>tess4j</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.kenai.nbpwr</groupId>
+			<artifactId>com-sun-media-imageio</artifactId>
+			<version>1.1-201002281504</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+
+		<repository>
+			<id>clojars.org</id>
+			<url>http://clojars.org/repo</url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+		<repository>
+			<id>novamens.repository.external</id>
+			<name>novamens Releases</name>
+			<url>http://maven.novamens.com/</url>
+		</repository>
+		<repository>
+			<id>kenai.repository.external</id>
+			<name>Kenai Releases</name>
+			<url>https://nbpwr.kenai.com/maven-repository/releases</url>
+		</repository>
+	</repositories>
+
+</project>

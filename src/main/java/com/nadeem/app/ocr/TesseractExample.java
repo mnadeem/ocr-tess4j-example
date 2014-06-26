@@ -8,7 +8,7 @@ import net.sourceforge.tess4j.TesseractException;
 public class TesseractExample
 {
     public static void main(String[] args) {
-        File imageFile = new File("eurotext.pdf");
+        File imageFile = new File("samples/eurotext.pdf");
         Tesseract instance = Tesseract.getInstance(); // JNA Interface Mapping
         // Tesseract1 instance = new Tesseract1(); // JNA Direct Mapping
 
